@@ -1,10 +1,10 @@
-# Registro de caixa   
+# Registro de caixa  
 **Como** Gestor do mercadinho.  
-**Quero** Que o sistema gere senhas digitais ou ordens de espera para os clientes quando a lotação estiver máxima.  
-**Para** Que a fila seja organizada e os clientes saibam exatamente quando podem entrar.  
+**Quero** Que o sistema registre todas as operações de venda, abertura, sangria e fechamento dos caixas de forma automatizada.  
+**Para** Garantir o controle financeiro preciso, evitar furos no caixa e agilizar o atendimento ao cliente.  
 
-# Criterios de Aceitação   
-Gerar uma sequência numérica única para cada cliente em espera   
-Exibir em uma tela/monitor a "Senha Atual" e a "Próxima Senha"  
-Emitir um aviso sonoro ou visual sempre que uma nova senha for chamada  
-Permitir que o operador chame a próxima senha manualmente ou de forma automática após uma saída  
+# Criterios de Aceitação
+Permitir a abertura e o fechamento do caixa informando o saldo inicial e final em dinheiro  
+Registrar automaticamente o método de pagamento (dinheiro, pix, cartão) de cada venda concluída  
+Rejeitar requisições de venda se o status do caixa correspondente estiver como "fechado" no sistema  
+Emitir cupom fiscal ou recibo digital após a confirmação do pagamento de cada cliente  
