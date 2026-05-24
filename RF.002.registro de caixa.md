@@ -1,7 +1,7 @@
 # Registro de caixa   
-**Como** Gestor do mercadinho.
-**Quero** Que o sistema gere senhas digitais ou ordens de espera para os clientes quando a lotação estiver máxima.
-**Para** Que a fila seja organizada e os clientes saibam exatamente quando podem entrar.
+**Como** Gestor do mercadinho.  
+**Quero** Que o sistema gere senhas digitais ou ordens de espera para os clientes quando a lotação estiver máxima.  
+**Para** Que a fila seja organizada e os clientes saibam exatamente quando podem entrar.  
 
 # Criterios de Aceitação   
 Gerar uma sequência numérica única para cada cliente em espera   
