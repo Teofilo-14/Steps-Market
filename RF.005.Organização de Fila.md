@@ -1,4 +1,4 @@
-# Registro de caixa   
+# Organização de Fila   
 **Como** Gestor do mercadinho.  
 **Quero** Que o sistema gere senhas digitais ou ordens de espera para os clientes quando a lotação estiver máxima.  
 **Para** Que a fila seja organizada e os clientes saibam exatamente quando podem entrar.  
