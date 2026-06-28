@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from src.models.fila_model import RequisicaoCliente, FilaModel
-from src.views.fila_view import FilaView
+from ..models.fila_model import RequisicaoCliente, FilaModel
+from ..views.fila_view import FilaView
 
 router = APIRouter(prefix="/api/fila")
 

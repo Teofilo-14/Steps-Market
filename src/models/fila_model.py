@@ -1,7 +1,7 @@
 from datetime import datetime
 from fastapi import HTTPException
 from pydantic import BaseModel
-from src.models.database import get_db_connection
+from .database import get_db_connection
 
 # Schema de entrada
 class RequisicaoCliente(BaseModel):

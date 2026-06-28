@@ -1,4 +1,4 @@
-from src.models.fila_model import ClienteFila
+from ..models.fila_model import ClienteFila
 
 class FilaView:
     @staticmethod

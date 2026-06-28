@@ -1,6 +1,6 @@
 from fastapi import HTTPException
 from pydantic import BaseModel
-from src.models.database import get_db_connection
+from .database import get_db_connection
 
 # 1. Schemas do Pydantic (Dados de Entrada)
 class CaixaIn(BaseModel): 

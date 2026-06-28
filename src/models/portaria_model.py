@@ -1,6 +1,6 @@
 from datetime import datetime
 from fastapi import HTTPException
-from src.models.database import get_db_connection
+from .database import get_db_connection  # Apenas um ponto
 
 class PortariaModel:
     LIMITE_MAXIMO = 10  # Definido como regra de negócio do modelo

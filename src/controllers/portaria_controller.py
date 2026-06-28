@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from src.models.portaria_model import PortariaModel
-from src.views.portaria_view import PortariaView
+from ..models.portaria_model import PortariaModel
+from ..views.portaria_view import PortariaView
 
 router = APIRouter(prefix="/api/portaria")
 

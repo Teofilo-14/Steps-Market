@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from src.models.produto_model import ProdutoIn, ProdutoModel
-from src.views.produto_view import ProdutoView
+from ..models.produto_model import ProdutoIn, ProdutoModel
+from ..views.produto_view import ProdutoView
 
 router = APIRouter(prefix="/api/produtos")
 
