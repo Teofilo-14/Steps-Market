@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from src.models.caixa_model import CaixaIn, VendaIn, CaixaModel
-from src.views.caixa_view import CaixaView
+from ..models.caixa_model import CaixaIn, VendaIn, CaixaModel
+from ..views.caixa_view import CaixaView
 
 router = APIRouter(prefix="/api/caixa")
 

@@ -3,11 +3,9 @@ from fastapi import HTTPException
 from pydantic import BaseModel
 from .database import get_db_connection
 
-# Schema de entrada
 class RequisicaoCliente(BaseModel):
     nome: str = None
 
-# Entidade de Domínio
 class ClienteFila:
     def __init__(self, senha: int, nome: str, status: str, horario_gerado: str = None):
         self.senha = senha

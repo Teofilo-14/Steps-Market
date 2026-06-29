@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, Header
-from src.models.usuario_model import UserIn, UserUpdate, UsuarioModel
-from src.views.usuario_view import UsuarioView
+from ..models.usuario_model import UserIn, UserUpdate, UsuarioModel
+from ..views.usuario_view import UsuarioView
 
 router = APIRouter(prefix="/api/usuarios")
 

@@ -1,8 +1,7 @@
 from fastapi import HTTPException
 from pydantic import BaseModel
-from .database import get_db_connection  # Apenas um ponto
+from .database import get_db_connection
 
-# Schema de Entrada do Pydantic
 class ProdutoIn(BaseModel):
     nome: str
     preco: float

@@ -14,8 +14,6 @@ from src.controllers.produto_controller import router as produto_router
 # Inicializa o aplicativo FastAPI
 app = FastAPI(title="Steps Market - Sistema Integrado de Automação Comercial")
 
-# ====== CONFIGURAÇÃO GLOBAL DE CORS ======
-# Permite que o seu Front-end se comunique perfeitamente com a API
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -25,7 +23,6 @@ app.add_middleware(
 )
 
 # ====== INICIALIZAÇÃO DO BANCO DE DADOS ======
-# Executa ao ligar o servidor para garantir que o 'database.db' tenha todas as tabelas
 inicializar_banco()
 
 # ====== ACOPLAMENTO DE TODAS AS ROTAS (CONTROLLERS) ======

@@ -2,9 +2,8 @@ import hashlib
 import re
 from fastapi import HTTPException
 from pydantic import BaseModel
-from src.models.database import get_db_connection
+from .database import get_db_connection
 
-# Schemas do Pydantic
 class UserIn(BaseModel):
     nome: str
     email: str

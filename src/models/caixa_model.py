@@ -2,7 +2,6 @@ from fastapi import HTTPException
 from pydantic import BaseModel
 from .database import get_db_connection
 
-# 1. Schemas do Pydantic (Dados de Entrada)
 class CaixaIn(BaseModel): 
     op: str
     saldo: float
@@ -11,8 +10,6 @@ class VendaIn(BaseModel):
     valor: float
     metodo: str # 'dinheiro', 'pix', 'cartao'
 
-
-# 2. Lógica de Negócio e Consultas ao Banco (Model)
 class CaixaModel:
     
     @staticmethod
@@ -38,7 +35,7 @@ class CaixaModel:
             cursor = conn.execute("INSERT INTO vendas (valor, m_pago) VALUES (?, ?)", (p.valor, p.metodo))
             v_id = cursor.lastrowid # Pega o ID gerado automaticamente pelo banco
         
-        return v_id # Retorna o ID puro (A View cuidará de formatar o recibo)
+        return v_id 
 
     @classmethod
     def fechar_caixa(cls, p: CaixaIn) -> str:

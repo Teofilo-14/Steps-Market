@@ -1,9 +1,9 @@
 from datetime import datetime
 from fastapi import HTTPException
-from .database import get_db_connection  # Apenas um ponto
+from .database import get_db_connection
 
 class PortariaModel:
-    LIMITE_MAXIMO = 10  # Definido como regra de negócio do modelo
+    LIMITE_MAXIMO = 10
 
     @classmethod
     def obter_total_dentro(cls) -> int:
