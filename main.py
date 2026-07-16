@@ -12,7 +12,7 @@ from src.controllers.fila_controller import router as fila_router
 from src.controllers.produto_controller import router as produto_router
 
 # Inicializa o aplicativo FastAPI
-app = FastAPI(title="Steps Market - Sistema Integrado de Automação Comercial")
+app = FastAPI(title="Steps Market - Sistema Integrado de Automação Comercial", swagger_ui_parameters={"defaultModelsExpandDepth": -1})
 
 app.add_middleware(
     CORSMiddleware,
@@ -21,6 +21,17 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Mensagem de Inicializção no Terminal
+@app.on_event("startup")
+def on_startup():
+    inicializar_banco()
+
+    print("\n" + "="*60)
+    print("STEPS MARKET API INICIALIZADA COM SUCESSO!")
+    print("Acesse a documentação interativa para testar as rotas em:")
+    print("http://127.0.0.1:8000/docs")
+    print("="*60 + "\n")
 
 # ====== INICIALIZAÇÃO DO BANCO DE DADOS ======
 inicializar_banco()
